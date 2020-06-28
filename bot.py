@@ -20,7 +20,7 @@ dp = Dispatcher(bot,storage = storage)
 id = dict()
 
 class person():
-
+'''Создаем класс для хранения необходимой информации'''
     orders = 0
 
     def __init__(self, name, id):
@@ -33,6 +33,7 @@ class person():
         self.photo_anime = None
 
     def sent(self, mode):
+        '''Создаем ордер'''
         if mode == 'anime':
             result = self.id + ' ' + mode + ' ' + self.photo_anime + '\n'
             with open(f'order_{mode}.txt', 'a+') as f:
@@ -43,6 +44,7 @@ class person():
                 f.write(result)
 
     def check(self):
+        '''Очистка мусора'''
         if self.photo_nst1 != None:
             os.remove(self.photo_nst1)
 

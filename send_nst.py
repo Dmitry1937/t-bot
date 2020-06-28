@@ -6,7 +6,7 @@ import os
 import torchvision.transforms as transforms
 from nst_model import *
 
-API_TOKEN = '1212978916:AAErcJf4hW3mTAq9dkLF1ZwZ7ns_RXMrjzg'
+API_TOKEN = '<>'
 bot = telepot.Bot(API_TOKEN)
 
 def image_loader(image_name):

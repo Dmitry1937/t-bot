@@ -8,7 +8,7 @@ from  torch import nn
 import matplotlib.image
 
 
-API_TOKEN = '1212978916:AAErcJf4hW3mTAq9dkLF1ZwZ7ns_RXMrjzg'
+API_TOKEN = '<>'
 SIZE = 256
 
 def blocks(input_res = 256, num_features = 256):
